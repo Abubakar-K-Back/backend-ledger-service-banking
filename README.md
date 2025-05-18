@@ -73,8 +73,7 @@ This service uses a multi-tier architecture:
   ```
 
 ## Test Requirements and fulfillments:
-
-̈1. Support the creation of accounts with specified initial balances.
+1. Support the creation of accounts with specified initial balances.
 2. Facilitate deposits and withdrawals of funds 
 3. Maintain a detailed transaction log (ledger) for each account¥
 4. Ensure ACID-like consistency for core operations to prevent double spending or inconsistent balances¥
