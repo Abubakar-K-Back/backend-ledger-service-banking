@@ -82,6 +82,8 @@ This service uses a multi-tier architecture:
 7. Include a comprehensive testing strategy, covering feature tests and mocking for robust validation.
 
 
+### How Did I acheive that
+
 - **Transaction Processing**: Asynchronous via RabbitMQ to handle high load
 - **Data Storage**: 
   - PostgreSQL for account balances (ACID compliant)
@@ -90,9 +92,8 @@ This service uses a multi-tier architecture:
 - **Idempotency**: Transaction reference IDs to prevent double processing
 - **Error Handling**: Comprehensive error handling with appropriate HTTP status codes
 
-## Implementation Details
 
-### ACID-like Consistency (as required in doc)
+#### ACID-like Consistency (as required in doc)
 
 While PostgreSQL provides ACID guarantees for individual operations, we extend this to our distributed system:
 
@@ -109,7 +110,7 @@ While PostgreSQL provides ACID guarantees for individual operations, we extend t
 
 4. **Durability**: Both PostgreSQL and MongoDB provide durability guarantees
 
-### Horizontal Scaling
+#### Horizontal Scaling
 
 The service is designed to scale horizontally:
 
