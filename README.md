@@ -141,11 +141,11 @@ I have created a single file where we are testing the functions and load on syst
 
 The service includes comprehensive testing at multiple levels:
 
-- Unit tests for core business logic
-- Integration tests for service interactions
-- End-to-end tests for complete flows
+- test for core business logic
+- Integration test for service interactions
+- End-to-end test for complete flows
 
-Run load test with:
+Run core test file with:
 ```
 go run ./tests/integration/load.go
 ```
